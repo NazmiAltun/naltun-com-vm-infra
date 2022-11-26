@@ -16,4 +16,6 @@ jobs:
           password: ${{ secrets.SSH_PASSWORD }}
           script: |
             cd /home/infra
-            ./deploy.sh
+            docker-compose down
+            git pull -r
+            docker-compose up -d
