@@ -50,5 +50,5 @@ volumes:
   certbot_acme_challenge:
 networks:
   default:
-    name: default
+    name: naltun
     external: true
